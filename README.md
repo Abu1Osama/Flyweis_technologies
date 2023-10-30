@@ -17,11 +17,8 @@ Welcome to the Flyweis_technologies Application! This web application allows you
 Flyweis_technologies Application! is a web application designed to help users easily access cars,battries etc
 ## Features
 
-- Browse a collection of video.
-- Add comments to share your thoughts on videos.
-- Watch videos on the basis of recommendation.
-- Filter video by creator.
-- Enjoy a seamless infinite scroll reel-watching experience.
+- Browse a collection of cars,battries etc.
+- login with otp.
 
 ## Screenshots
 
@@ -59,7 +56,7 @@ npm start
 
 ## Technologies Used
 
-- Video_Clone Web Application is built using the following technologies:
+Flyweis_technologies Application  is built using the following technologies:
 
 - React.js
 - Axios
