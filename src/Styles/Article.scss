@@ -1,0 +1,46 @@
+.article-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h2 {
+        color: #001b39;
+        font-family: Poppins;
+        font-size: 18.003px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.18px;
+      }
+      p {
+        color: #282828;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.18px;
+      }
+    .article-right-heading {
+      color: #001b39;
+      font-family: Poppins;
+      font-size: 18.003px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.18px;
+    }
+    .article-right-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0px 10px 0;
+        .article-right-content-child{
+            display: flex;
+            gap: 10px;
+            .article-right-child-content{
+                display: grid;
+                justify-content: space-between;
+            }
+        }
+    }
+  }

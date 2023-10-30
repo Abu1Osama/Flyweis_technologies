@@ -1,0 +1,284 @@
+#Home.Home {
+  .hero-div {
+    background: url("../assets/Rectangle14.png"),
+      lightgray 50% / cover no-repeat;
+    height: 570px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    z-index: -1;
+
+    .hero-main {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      padding: 15px;
+      margin-top: 120px;
+      .hero-div-heading {
+        h2 {
+          color: #fff;
+          font-family: Poppins;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: 0.113px;
+        }
+        p {
+          color: #fff;
+          font-family: Inter;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18.4px; /* 102.222% */
+          letter-spacing: 0.169px;
+        }
+      }
+      .hero-div-para {
+        p {
+          color: #fff;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30.84px;
+          letter-spacing: 0.09px;
+        }
+      }
+      .hero-div-stat {
+        display: flex;
+        gap: 30px;
+        .mid {
+          font-size: 50px;
+        }
+        align-items: center;
+        .hero-div-stat-left,
+        .hero-div-stat-right {
+          display: flex;
+          gap: 25px;
+          span {
+            color: #fff;
+            font-family: Poppins;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.113px;
+          }
+          p {
+            color: #fff;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 23.84px; /* 170.286% */
+            letter-spacing: 0.09px;
+          }
+          img {
+            width: 60.05px;
+            height: 60.6px;
+            object-fit: contain;
+          }
+          .hero-div-stat-right-count,
+          .hero-div-stat-left-count {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .mini-nav {
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.25);
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    a {
+      color: #393939;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-decoration: none;
+    }
+  }
+
+  .car-service {
+    width: 50%;
+    padding: 10px;
+    display: grid;
+    gap: 20px;
+    .car-service-heading {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h2 {
+        color: #001b39;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.18px;
+      }
+      p {
+        color: #4a4a4a;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.146px;
+      }
+    }
+    .car-section-main {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 30px;
+      column-gap: 20px;
+      border-radius: 20px;
+      align-items: center;
+      background: #eee;
+      padding: 15px;
+    }
+    .car-section-bottom {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  .custom-service {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 15px;
+    .custom-service-heading {
+      h2 {
+        color: #001b39;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.18px;
+      }
+    }
+    .custom-service-data {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+      h2 {
+        color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 18.003px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.225px;
+      }
+      .custom-service-datachild {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+
+  .workshop {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 15px;
+    .workshop-heading {
+      h2 {
+        color: #001b39;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.18px;
+      }
+    }
+    .workshop-data {
+      display: flex;
+      gap: 15px;
+    }
+  }
+
+  .car-services {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+    padding: 15px;
+    .car-services-heading,
+    .workshop-heading {
+      h2 {
+        color: #001b39;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.18px;
+      }
+    }
+    .car-services-data {
+      display: grid;
+      grid-template-columns: 48% 48%;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+      .car-service-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        img {
+          width: 165px;
+          height: 165px;
+          flex-shrink: 0;
+        }
+        h1 {
+          color: #001b39;
+          font-family: Poppins;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 0.18px;
+        }
+      }
+    }
+  }
+  .feedback-review{
+    width: 50%;
+  }
+}

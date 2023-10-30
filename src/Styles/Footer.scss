@@ -1,0 +1,76 @@
+#Footer.Footer {
+  color: #fff;
+  .footer-top {
+    background: #001b39;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    .footer-top-child {
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+    }
+    h4 {
+      color: #fff;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 15.984px;
+    }
+    p {
+      color: #fff;
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 13.8px;
+      letter-spacing: 1px;
+    }
+    .footer-top-child-section {
+      display: grid;
+      gap: 30px;
+    }
+  }
+  .footer-bottom {
+    background: #282828;
+    display: grid;
+    grid-template-columns: 25% 35% 20%;
+    justify-content: center;
+    gap: 15px;
+    padding: 55px 25px;
+    .footer-bottom-child {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+      }
+      .footer-bottom-child-address {
+        p {
+          color: #fff;
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 21.97px;
+          letter-spacing: 0.12px;
+        }
+      }
+      .store {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 19px;
+        align-self: flex-end;
+      }
+      .footer-bottom-child-ico {
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+}

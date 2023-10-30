@@ -1,0 +1,73 @@
+#Bookform.Bookform {
+  width: 308px;
+  height: 434px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  position: fixed;
+  right: 50px;
+  top: 110px;
+  .bookform-main {
+    padding: 20px ;
+    display: grid;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      color: #001b39;
+      font-family: Poppins;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 138.5%; /* 44.32px */
+      letter-spacing: 0.113px;
+    }
+    p {
+      color: #282828;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24.84px; /* 138% */
+      letter-spacing: 0.09px;
+      width: 198px;
+    }
+    .ratings {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      span {
+        color: #fbbc04;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+    .inp {
+      display: grid;
+      gap: 10px;
+      select,
+      input {
+        padding: 8px 19px;
+        border-radius: 10px;
+        border: 1px solid #000;
+      }
+    }
+    button {
+        padding: 3px 19px;
+      border-radius: 10px;
+      background: #001b39;
+      color: #fff;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24.84px; /* 155.25% */
+      letter-spacing: 0.09px;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+#Periodic.Periodic {
+  margin-top: 100px;
+  .periodic-heading {
+    background: #e7e7e7;
+    width: 70%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    span {
+      color: #001b39;
+      font-family: Inter;
+      font-size: 18.003px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.225px;
+      cursor: pointer;
+    }
+    .active-tab{
+      color: green;
+      border-bottom: 2px solid tomato;
+    }
+  }
+  .card-car{
+height: 434px;
+flex-shrink: 0;
+position: fixed;
+top: 150px;
+right: 40px;
+border-radius: 20px;
+background: #FFF;
+box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.25);
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+.card-car-span{
+  display: flex;
+  justify-content: space-between;
+  color: #001B39;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.157px;
+}
+p{
+  color: #4A4A4A;
+text-align: center;
+font-family: Inter;
+font-size: 14.75px;
+font-style: normal;
+font-weight: 400;
+line-height: 23.625px; /* 160.169% */
+letter-spacing: 0.146px;
+}
+  }
+}

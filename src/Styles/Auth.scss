@@ -1,0 +1,90 @@
+#auth.auth {
+  backdrop-filter: (45px);
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: end;
+  z-index: 1000000;
+
+  .fotm-container {
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background: #fff;
+
+
+    h2 {
+      color: #3f7ccd;
+      font-family: Poppins;
+      font-size: 19.076px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      letter-spacing: 0.143px;
+    }
+    .forn-child-btn {
+      border-radius: 6.359px;
+      background: #3f7ccd;
+      display: inline-flex;
+      padding: 9.538px 155.152px;
+      align-items: flex-start;
+      gap: 6.359px;
+      width: 100%;
+
+      button {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 15.897px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.143px;
+        background: transparent;
+        border: transparent;
+        cursor: pointer;
+      }
+    }
+    .forn-child-inp {
+      border-radius: 6.359px;
+      border: 1.272px solid #3f7ccd;
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 0 0 0 10px;
+      span {
+        color: #3f7ccd;
+        font-family: Poppins;
+        font-size: 15.897px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.143px;
+        font-weight: 600;
+      }
+
+      input {
+        padding: 9.538px;
+        width: 100%;
+        border: none;
+        outline: none;
+        &::placeholder {
+          color: #3f7ccd;
+          font-family: Poppins;
+          font-size: 15.897px;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.143px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

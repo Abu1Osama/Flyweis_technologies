@@ -1,0 +1,263 @@
+#PeriodicService-main.PeriodicService-main {
+  padding: 10px 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  .PeriodicService-main-container {
+    display: grid;
+    gap: 20px;
+    .PeriodicService-main-container-heading {
+      h1 {
+        color: #001b39;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.225px;
+      }
+    }
+    .PeriodicService-main-container-box {
+      display: grid;
+      gap: 20px;
+      .PeriodicService-main-child {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-bottom: 1px solid #b0b0b0;
+        .hour {
+          background: #e5e7e9;
+          display: flex;
+          padding: 5.75px 22.84px 7.09px 20.25px;
+          gap: 9px;
+          width: max-content;
+          align-items: center;
+          margin-left: auto;
+          span {
+            color: #4a4a4a;
+            font-family: Inter;
+            font-size: 12.625px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 21.353px; /* 169.129% */
+            letter-spacing: 0.135px;
+          }
+        }
+
+        .PeriodicService-main-content {
+          display: flex;
+          gap: 10px;
+          .PeriodicService-main-content-data {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            .PeriodicService-top {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              h2 {
+                color: #001b39;
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.225px;
+              }
+              li {
+                color: #001b39;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.225px;
+              }
+            }
+            ul {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 25px;
+              li {
+                margin-left: 25px;
+              }
+            }
+            .desc {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              row-gap: 20px;
+              gap: 20px;
+              span {
+                color: #4a4a4a;
+                font-family: Inter;
+                font-size: 15.875px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.157px;
+              }
+              .desc-child {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+              }
+            }
+            .viewall {
+              color: #1daf65;
+              font-family: Inter;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 0.13px;
+              text-decoration: underline;
+
+              cursor: pointer;
+              span {
+                padding: 5px;
+              }
+            }
+          }
+        }
+        .PeriodicService-main-bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 35px;
+          padding: 0 35px;
+
+          span {
+            color: #282828;
+            font-family: Inter;
+            font-size: 20.75px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26.235px; /* 126.434% */
+            letter-spacing: 0.18px;
+          }
+          .add-cart {
+            display: flex;
+            padding: 10.83px 17.22px 12.83px 12.38px;
+            align-items: center;
+            gap: 7.12px;
+            border: 1px solid #001b39;
+            background: #fff;
+            color: #001b39;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 21.42px; /* 133.875% */
+            letter-spacing: 0.157px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+  .maintainence {
+    display: grid;
+    gap: 30px;
+    .maintainence-heading {
+      h1 {
+        color: #001b39;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.225px;
+      }
+    }
+    .maintainence-content {
+      display: flex;
+      gap: 15px;
+      #maintainence-image {
+        .maintainence-image-relative {
+        }
+      }
+      .play2 {
+        position: absolute;
+        transform: translate(350%, 110%);
+      }
+      .maintainence-data {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        p {
+          color: #4a4a4a;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 41.144px; /* 205.718% */
+          letter-spacing: 0.18px;
+        }
+        h2 {
+          color: #001b39;
+          font-family: Inter;
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24.325px; /* 97.301% */
+          letter-spacing: 0.257px;
+        }
+        span {
+          color: #e73c33;
+          font-family: Inter;
+          font-size: 18.572px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24.481px; /* 131.815% */
+          letter-spacing: 0.18px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .related-blog {
+    display: grid;
+    gap: 30px;
+    .related-blog-heading {
+      h1 {
+        color: #001b39;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.225px;
+      }
+    }
+    .related-blog-content {
+      display: flex;
+      gap: 15px;
+      .related-blog-child {
+        position: relative;
+        .absolute {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          padding:0 35px;
+          justify-content: center;
+          bottom: 30px;
+          color: #fff;
+          text-align: center;
+          font-family: Inter;
+          font-size: 13.487px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          
+        }
+      }
+    }
+  }
+  .review-recent{
+    width: 100%;
+  }
+}

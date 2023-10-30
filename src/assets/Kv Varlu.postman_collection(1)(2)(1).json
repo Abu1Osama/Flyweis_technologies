@@ -1,0 +1,1229 @@
+{
+	"info": {
+		"_postman_id": "a4b83468-bb9e-4df4-8af2-21508ce4fd0e",
+		"name": "Kv Varlu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27574113"
+	},
+	"item": [
+		{
+			"name": "User Authentication",
+			"item": [
+				{
+					"name": "Register User Otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobileNumber\":\"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/register"
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Otp Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobileNumber\":\"1234567890\",\r\n    \"otp\":\"BF2Wmd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/api/v1/verify/otp",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"verify",
+								"otp"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "userId",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User Otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobileNumber\":\"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Login Otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobileNumber\":\"1234567890\",\r\n    \"otp\":\"aXCvtD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/verify/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Car",
+			"item": [
+				{
+					"name": "Add Car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "alto",
+									"type": "text"
+								},
+								{
+									"key": "manufacturer",
+									"value": "tata",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "hybrid",
+									"type": "text"
+								},
+								{
+									"key": "fuelType",
+									"value": "petrol",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/admin/Desktop/Capture deliver rejected.JPG"
+								}
+							]
+						},
+						"url": "localhost:4000/api/v1/car/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Cars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/car/get/all"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Car by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/car/cars/64ccdf00c1c6f5e777f049b1"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Car",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\":\"nano\",\r\n\"manufacturer\":\"tesla\",\r\n\"model\":\"new\",\r\n\"fuelType\":\"diesel\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/car/update/64ccdf00c1c6f5e777f049b1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Car",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:4000/api/v1/car/delete/64ccdf00c1c6f5e777f049b1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Create Categories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/admin/Desktop/Capture varlu user.JPG"
+								},
+								{
+									"key": "name",
+									"value": "Periodic Services",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:4000/api/v1/category/createCategory"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/category/all"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Batteries",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/admin/Desktop/Capture car.JPG"
+								}
+							]
+						},
+						"url": "localhost:4000/api/v1/category/update/64cde65e7b6547a3a125c38c"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:4000/api/v1/category/delete/64cde65e7b6547a3a125c38c"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sub Category",
+			"item": [
+				{
+					"name": "Create Sub Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"categoryId\": \"64cde8c8592328bd621742fd\", \r\n  \"carId\": \"64d334b3e458fdab535a2cc0\",  \r\n  \"name\": \"Engine Services2\",  \r\n  \"types\": [             \r\n    {\r\n      \"typeName\": \"Scheduled Packages\",\r\n      \"typeFeatures\": [\r\n        {\r\n          \"name\": \"Basic Service\",\r\n          \"feature\": \"Wiper,Car Wash, Engine Oil\",\r\n          \"price\": 3999\r\n        },\r\n        {\r\n          \"name\": \"Standard Service\",\r\n          \"feature\": \"Car scan,Interior Vaccum\",\r\n          \"price\": 4999\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"typeName\": \"Brake Maintenance\",\r\n      \"typeFeatures\": [\r\n        {\r\n          \"name\": \"Front Brake Pads\",\r\n          \"feature\": \"Opening,Replacement\",\r\n          \"price\": 5999\r\n        },\r\n        {\r\n          \"name\": \"Rear Brake Shoes\",\r\n          \"feature\": \"Applicabe,cleaning\",\r\n          \"price\": 8999\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:4000/api/v1/subcategory/create",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"subcategory",
+								"create"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Subcategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/subcategory/all"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Subcategory",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"categoryId\": \"64cde8c8592328bd621742fd\", \r\n  \"carId\": \"64d334b3e458fdab535a2cc0\",  \r\n  \"name\": \"Engine Services2\",  \r\n  \"types\": [             \r\n    {\r\n      \"typeName\": \"Scheduled Packages2\",\r\n      \"typeFeatures\": [\r\n        {\r\n          \"name\": \"Basic Service2\",\r\n          \"feature\": \"Wiper,Car Wash, Engine Oil\",\r\n          \"price\": 3999\r\n        },\r\n        {\r\n          \"name\": \"Standard Service\",\r\n          \"feature\": \"Car scan,Interior Vaccum\",\r\n          \"price\": 4999\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"typeName\": \"Brake Maintenance2\",\r\n      \"typeFeatures\": [\r\n        {\r\n          \"name\": \"Front Brake Pads2\",\r\n          \"feature\": \"Opening,Replacement\",\r\n          \"price\": 5999\r\n        },\r\n        {\r\n          \"name\": \"Rear Brake Shoes\",\r\n          \"feature\": \"Applicabe,cleaning\",\r\n          \"price\": 8999\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/subcategory/update/64d33e8da38190b2f6931745"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Sub Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:4000/api/v1/subcategory/delete/64cdf070c2533905c0904bc7"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Price by Car details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"manufacturer\":\"tata\",\r\n    \"model\":\"hybrid\",\r\n    \"fuelType\":\"petrol\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/car/service/price"
+					},
+					"response": []
+				},
+				{
+					"name": "Search All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/v1/subcategory/search?search=Engine Services2",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"subcategory",
+								"search"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "Engine Services2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blog",
+			"item": [
+				{
+					"name": "Create Blog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "car blog",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This is car blog",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/admin/Desktop/Capture car.JPG"
+								}
+							]
+						},
+						"url": "localhost:4000/api/v1/blog/create"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Blogs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/blog"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Blog",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "car blog 2",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This is car blog 2",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/admin/Desktop/Capture deliver rejected.JPG"
+								}
+							]
+						},
+						"url": "localhost:4000/api/v1/blog/update/64d0c432c70f46ef11077f2c"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Blog",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:4000/api/v1/blog/delete/64d0c432c70f46ef11077f2c"
+					},
+					"response": []
+				},
+				{
+					"name": "Today's Blog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/blog/product/date"
+					},
+					"response": []
+				},
+				{
+					"name": "Make recommended",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"recommended\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/blog/recommended/64d0cac089f4cdd1432f6142"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Recommended",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/blog/recommended/get"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove from recommended",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "localhost:4000/api/v1/blog/remove/recommended/64d0cac089f4cdd1432f6142"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FAQ",
+			"item": [
+				{
+					"name": "Create Faq",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question\":\"What is question?\",\r\n    \"answer\":\"This is answer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/faq"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Faq",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/faq"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Faq",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question\":\"What is question2?\",\r\n    \"answer\":\"This is answer2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/faq/64d23376670f91636fa29b18"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Faq",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:4000/api/v1/faq/64d23376670f91636fa29b18"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Terms",
+			"item": [
+				{
+					"name": "Create Terms",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"terms\":\"This is Our terms and condition\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/terms"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Terms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/terms"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Terms",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"terms\": \"This is Our terms and condition 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/terms/64d23f861d57643385270ecd"
+					},
+					"response": []
+				},
+				{
+					"name": "Terms Deleted",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:4000/api/v1/terms/64d23f861d57643385270ecd"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact Us",
+			"item": [
+				{
+					"name": "Create Contact Us ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"message\": \"contact us section\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/contact"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Contact Us",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/contact"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Contact",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"message\": \"contact us section2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/contact/64d36e8fcf14e3e2db7b855d"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Contact Us",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:4000/api/v1/contact/64d36e8fcf14e3e2db7b855d"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Service",
+			"item": [
+				{
+					"name": "Create Service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoryId\":\"64cde51eb8dcb3f080e00394\",\r\n    \"name\":\"Scheduled Packages\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/service"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Service",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\":\"64cde8c8592328bd621742fd\",\r\n    \"name\":\"Scheduled Packages 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/api/v1/service/64d495276b923b7b04d10014"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Service By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:4000/api/v1/service/64d495276b923b7b04d10014"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:4000/api/v1/service"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Service",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:4000/api/v1/service/64d495276b923b7b04d10014"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Service Type",
+			"item": [
+				{
+					"name": "Create Service Type",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serviceId\":\"64d495276b923b7b04d10014\",\r\n    \"name\":\"Basic Service\",\r\n    \"feature\":\"car wash, oil\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/api/v1/serviceType"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Service Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/serviceType"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Service Type",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"service\":\"64d4c63505ffcf65542227ed\",\r\n    \"name\":\"Basic Service\",\r\n    \"feature\":\"car wash,oil,paint\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/serviceType/64d4bf54bf4cf7c18dc6a8ab"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Service Type",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:4000/api/v1/serviceType/64d4c021262c30a658d7afe4"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Privacy",
+			"item": [
+				{
+					"name": "Create Privacy Policy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"privacy\":\"This is Privacy Policy\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/privacy"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Privacy Policy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/privacy"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Privacy Policy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"privacy\":\"This is Privacy Policy 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/privacy/64d4d3593fd14ba85c1857c1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Privacy Policy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:4000/api/v1/privacy/64d4d3593fd14ba85c1857c1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Manufacturer",
+			"item": [
+				{
+					"name": "Create Manufacturer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"TATA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/api/v1/manufacturer"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Manufacturer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:4000/api/v1/manufacturer"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Manufacturer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"TATA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/api/v1/manufacturer/64d62ba5e84c8a5c8758863c"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Manufacturer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:4000/api/v1/manufacturer/64d62ba5e84c8a5c8758863c"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Model",
+			"item": [
+				{
+					"name": "Create Model",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Nano\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/api/v1/model"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Model",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:4000/api/v1/model"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Model",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Nano\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/api/v1/model/64d635f32bc41d51266d374e"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Model",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:4000/api/v1/model/64d635f32bc41d51266d374e"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Coupon",
+			"item": [
+				{
+					"name": "create coupon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"SUMMER20\",\r\n    \"discount\": 20,\r\n    \"startDate\": \"2023-08-17\",\r\n    \"expirationDate\": \"2023-08-17\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/api/v1/coupon"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Coupons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:4000/api/v1/coupon"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": []
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "Create Review",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Y2NjYjEyNWNhMTNkODg4OGMxMmU4OSIsImlhdCI6MTY5MjE3MTg0Mn0.WUOrsRUyeYzRIPwpbftObvW_I8dXx6iVl9sdKOQfRKc"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"review\":\"good product\",\r\n      \"rating\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/api/v1/review"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Reviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/review"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fuel Type",
+			"item": [
+				{
+					"name": "Create Fuel Type",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"petrol\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:4000/api/v1/fuelType"
+					},
+					"response": []
+				},
+				{
+					"name": "GET All Fuel types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/fuelType"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Price",
+			"item": [
+				{
+					"name": "Create Price",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"modelId\": \"64dcd45e78988a5b661cdd91\",\r\n  \"manufacturerId\": \"64d62d3bd4f60b74f55fb826\",\r\n  \"fuelTypeId\": \"64dcab17bc6710049a78dbf6\",\r\n  \"serviceTypeId\": \"64dcb05555a0ee283c1ba95d\",\r\n  \"amount\": 1999\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/api/v1/price"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Price",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:4000/api/v1/price"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Price by Car",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"modelId\": \"64dcd45e78988a5b661cdd91\",\r\n    \"manufacturerId\": \"64d62d3bd4f60b74f55fb826\",\r\n    \"fuelTypeId\": \"64dcab17bc6710049a78dbf6\",\r\n    \"serviceTypeId\": \"64dcb05555a0ee283c1ba95d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:4000/api/v1/price"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Curated",
+			"item": [
+				{
+					"name": "create curated",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "curated",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/admin/Desktop/Capture blog.JPG"
+								}
+							]
+						},
+						"url": "localhost:4000/api/v1/curated/create"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Curated custom service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:4000/api/v1/curated/all"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Curated",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "curated 2",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/admin/Desktop/Capture error.JPG"
+								}
+							]
+						},
+						"url": "localhost:4000/api/v1/curated/updateCurated/64de1d80f25fc43c370615bf"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Curated",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:4000/api/v1/curated/removeCurated/64de1d80f25fc43c370615bf"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
