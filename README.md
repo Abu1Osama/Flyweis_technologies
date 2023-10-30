@@ -25,12 +25,15 @@ Flyweis_technologies Application! is a web application designed to help users ea
 
 ## Screenshots
 
-![Screenshot 1](./src/assest/)
-![Screenshot 2](./src/assest/)
-![Screenshot 3](./src/assest/)
-![Screenshot 4](./src/assest/)
-![Screenshot 5](./src/assest/)
-![Screenshot 6](./src/assest/)
+![Screenshot 1](./src/assest/pic1)
+![Screenshot 2](./src/assest/pic2)
+![Screenshot 3](./src/assest/pic3)
+![Screenshot 4](./src/assest/pic4)
+![Screenshot 5](./src/assest/pic5)
+![Screenshot 6](./src/assest/pic6)
+![Screenshot 7](./src/assest/pic7)
+![Screenshot 8](./src/assest/pic8)
+![Screenshot 9](./src/assest/pic9)
 
 ## Deployment
 
@@ -40,7 +43,7 @@ Deployed Link:-https://flyweis-technologies.vercel.app
 
 # Clone the repository
 
-git clone 
+git clone https://github.com/Abu1Osama/Flyweis_technologies.git
 
 # Change directory
 
@@ -66,6 +69,6 @@ npm start
 
 - Visit the application in your web browser at http://localhost:3000 or the URL https://flyweis-technologies.vercel.app/
 1. Browse a collection of cars ,battries.
-2. use 7970663406 to login.
+2. use <h1>7970663406</h1> to login.
 3. click on custom text in navbar to logout.
 4. use mini nav on home page and peridic page to navigate inside page.
