@@ -25,15 +25,15 @@ Flyweis_technologies Application! is a web application designed to help users ea
 
 ## Screenshots
 
-![Screenshot 1](./src/assest/pic1)
-![Screenshot 2](./src/assest/pic2)
-![Screenshot 3](./src/assest/pic3)
-![Screenshot 4](./src/assest/pic4)
-![Screenshot 5](./src/assest/pic5)
-![Screenshot 6](./src/assest/pic6)
-![Screenshot 7](./src/assest/pic7)
-![Screenshot 8](./src/assest/pic8)
-![Screenshot 9](./src/assest/pic9)
+![Screenshot 1](./src/assets/pic1)
+![Screenshot 2](./src/assets/pic2)
+![Screenshot 3](./src/assets/pic3)
+![Screenshot 4](./src/assets/pic4)
+![Screenshot 5](./src/assets/pic5)
+![Screenshot 6](./src/assets/pic6)
+![Screenshot 7](./src/assets/pic7)
+![Screenshot 8](./src/assets/pic8)
+![Screenshot 9](./src/assets/pic9)
 
 ## Deployment
 
